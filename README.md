@@ -1,29 +1,27 @@
-# low-fp-intrusion-detection
-Project: Low False-Positive Machine Learning for Network Intrusion Detection
+# Low False-Positive Machine Learning for Network Intrusion Detection
 
-Description:
+This project investigates machine learning methods for detecting malicious network traffic while maintaining a low false positive rate.
 
-This project evaluates machine learning models for network intrusion detection
-while maintaining a low false positive rate. The goal is to identify malicious
-network traffic while minimizing false alarms, which is critical for real-world
-intrusion detection systems.
-
-Dataset:
-
+## Dataset
 KDD Cup 1999 (10% dataset)
 
-Models:
-
+## Models
 - Logistic Regression
-  
 - Random Forest
-  
 - Multi-Layer Perceptron (MLP)
 
-Evaluation:
+## Evaluation
+Models are evaluated using:
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+- ROC curves
+- Detection performance at low false positive rate thresholds
 
-Models are evaluated using macro-F1, per-class recall, and recall at fixed
-false positive rate thresholds.
+## Additional Analysis
+To address redundancy in the KDD99 dataset, duplicate records are removed and models are evaluated again on the deduplicated dataset.
 
-Author:
-Maahnum Zaheer – University of Washington EE 467
+## Author
+Maahnum Zaheer  
+EE 467 – Machine Learning for Cybersecurity
